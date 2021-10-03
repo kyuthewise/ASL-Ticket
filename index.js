@@ -12,7 +12,9 @@ const settings = new enmap({
 
 client.on('ready', () => {
     console.log('ready')
+    bot.user.setActivity('reviewing studyline tickets');
 });
+
 
 client.on('message', async message => {
     if(message.author.bot) return;
