@@ -19,8 +19,6 @@ client.on('ready', () => {
 client.on('message', async message => {
     if(message.author.bot) return;
     if(message.content.indexOf(prefix) !== 0) return;
-    bot.user.setActivity('to your reports', { type: 'LISTENING'});
-
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
