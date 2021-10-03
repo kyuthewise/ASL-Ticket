@@ -17,6 +17,7 @@ client.on('ready', () => {
 
 
 client.on('message', async message => {
+    client.user.setActivity('to your reports', { type: 'LISTENING'});
     if(message.author.bot) return;
     if(message.content.indexOf(prefix) !== 0) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
