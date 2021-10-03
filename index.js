@@ -12,6 +12,7 @@ const settings = new enmap({
 
 client.on('ready', () => {
     console.log('ready')
+    bot.user.setActivity('to your reports', { type: 'LISTENING'});
 });
 
 
