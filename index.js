@@ -75,7 +75,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
             ],
             type: 'text'
         }).then(async channel => {
-            channel.send(`<@${user.id}>`, new Discord.MessageEmbed().setTitle("Welcome to your ticket!").setDescription("ASL staff will be with you shortly").setColor("00ff00"))
+            channel.send(`<@${user.id}>`, new Discord.MessageEmbed().setTitle("Welcome to your ticket!").setDescription("GSL staff will be with you shortly").setColor("00ff00"))
         })
     }
 });
