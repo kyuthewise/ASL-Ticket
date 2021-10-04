@@ -17,7 +17,7 @@ client.on('ready', () => {
 
 
 client.on('message', async message => {
-    client.user.setActivity('to your reports', { type: 'LISTENING'});
+    client.user.setActivity('your reports', { type: 'LISTENING'});
     if(message.author.bot) return;
     if(message.content.indexOf(prefix) !== 0) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
@@ -30,9 +30,9 @@ client.on('message', async message => {
         if(!channel) return message.reply("Usage: `!ticket-setup #channel`");
 
         let sent = await channel.send(new Discord.MessageEmbed()
-            .setTitle("ASL Ticket system")
+            .setTitle("GSL Ticket system")
             .setDescription("React to open a ticket!")
-            .setFooter("ASL Ticket system")
+            .setFooter("GSL Ticket system")
             .setColor("00ff00")
         );
 
